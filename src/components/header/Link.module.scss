@@ -1,0 +1,16 @@
+.container {
+  padding: 8px 16px;
+
+  .link {
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    padding: 4px 8px;
+  }
+
+  :hover {
+    background-color: rgb(255, 255, 255, .2);
+    border-radius: 16px;
+  }
+}

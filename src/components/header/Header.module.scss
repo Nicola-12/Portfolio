@@ -1,0 +1,24 @@
+header {
+  position: relative;
+  height: 56px;
+
+  .nav_bar {
+    position: absolute;
+    width: 100%;
+    height: 56px;
+    float: left;
+
+    &__list {
+      position: relative;
+      list-style-type: none;
+      display: flex;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 0;
+
+      &__item {
+        display: inline;
+      }
+    }
+  }
+}

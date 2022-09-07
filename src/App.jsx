@@ -1,15 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import styles from './App.module.scss';
+import Header from "./components/header/Header";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <div className="App">
+    <div className={styles.app}>
+      <Header />
       <h1>Test My Portfolio</h1>
     </div>
-  )
+  );
 }
-
-export default App
