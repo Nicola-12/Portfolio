@@ -1,0 +1,49 @@
+.about {
+  padding-inline: 7.5%;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  justify-content: center;
+
+  &__image {
+    width: 350px;
+    height: 530px;
+    background: rgba(74, 171, 226, 0.1);
+    border-radius: 8px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    &__title {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-around;
+      height: 25%;
+
+      &__me {
+        padding: 8px;
+        font-family: $default-font-family;
+        background: rgba(74, 171, 226, 0.1);
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 18px;
+        color: #4aabe2;
+      }
+
+      &__name {
+        font-weight: 800;
+        font-size: 48px;
+      }
+    }
+
+    &__subtitle {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      text-align: justify;
+    }
+  }
+}

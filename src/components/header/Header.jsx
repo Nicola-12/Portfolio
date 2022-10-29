@@ -7,10 +7,10 @@ export default function Header() {
       <nav className={styles.nav_bar}>
         <ul className={styles.nav_bar__list}>
           <li className={styles.nav_bar__list__item}>
-            <Link name='Sobre' href='#' />
+            <Link name='Sobre mim' href='#' />
           </li>
           <li className={styles.nav_bar__list__item}>
-            <Link name='Formações' href='#' />
+            <Link name='Projetos' href='#' />
           </li>
           <li className={styles.nav_bar__list__item}>
             <Link name='Conhecimentos' href='#' />
