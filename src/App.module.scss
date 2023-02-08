@@ -3,3 +3,39 @@
   height: 100%;
   width: 100%;
 }
+
+.body {
+  gap: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects {
+  display: grid;
+  padding-inline: 7.5%;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16%;
+  grid-template-rows: 20% 1fr;
+  grid-template-areas:
+    "title title title"
+    "card1 card2 card3";
+}
+
+.projects > h1 {
+  justify-self: baseline;
+  grid-area: title;
+  font-size: 48px;
+  font-family: $default-font-family;
+}
+
+.card1 {
+  grid-area: card1;
+}
+
+.card2 {
+  grid-area: card2;
+}
+
+.card3 {
+  grid-area: card3;
+}
