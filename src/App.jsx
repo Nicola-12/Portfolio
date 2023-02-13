@@ -10,10 +10,10 @@ export default function App() {
       <div className={styles.body}>
         <About />
         <div className={styles.projects}>
-          <h1 id="title">Projetos</h1>
-          <ProjectCard className={styles.card1}/>
-          <ProjectCard className={styles.card2}/>
-          <ProjectCard className={styles.card3}/>
+          <h1>Projetos</h1>
+          <ProjectCard className={styles.card1} />
+          <ProjectCard className={styles.card2} />
+          <ProjectCard className={styles.card3} />
         </div>
       </div>
     </div>

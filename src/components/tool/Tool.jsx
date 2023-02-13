@@ -3,7 +3,7 @@ import styles from './Tool.module.scss'
 export default function Tool(props) {
   return (
     <div className={styles.tool}>
-      <span className={styles.name}>{props.name}</span>
+      <span className={styles.tool__name}>{props.name}</span>
     </div>
   );
 }

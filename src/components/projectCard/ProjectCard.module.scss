@@ -1,6 +1,19 @@
 .card {
-    height: 460px;
-    width: 360px;
-    border-radius: 8px;
-    border: 1px solid #4AABE280
+  height: auto;
+  width: 360px;
+  border-radius: 8px;
+  border: 1px solid #4aabe280;
+  padding: 30px;
+  text-align: start;
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  &__tools {
+    padding: 20px 0 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

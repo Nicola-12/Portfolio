@@ -14,7 +14,9 @@
   display: grid;
   padding-inline: 7.5%;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 16%;
+  column-gap: 10%;
+  align-items: center;
+  justify-items: center;
   grid-template-rows: 20% 1fr;
   grid-template-areas:
     "title title title"
