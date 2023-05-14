@@ -2,28 +2,28 @@
   text-align: center;
   height: 100%;
   width: 100%;
+
+  &__body {
+    gap: 70px;
+    display: flex;
+    flex-direction: column;
+
+    &__projects {
+      display: grid;
+      padding-inline: 7.5%;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 10%;
+      align-items: center;
+      justify-items: center;
+      grid-template-rows: 20% 1fr;
+      grid-template-areas:
+        'title title title'
+        'card1 card2 card3';
+    }
+  }
 }
 
-.body {
-  gap: 70px;
-  display: flex;
-  flex-direction: column;
-}
-
-.projects {
-  display: grid;
-  padding-inline: 7.5%;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 10%;
-  align-items: center;
-  justify-items: center;
-  grid-template-rows: 20% 1fr;
-  grid-template-areas:
-    "title title title"
-    "card1 card2 card3";
-}
-
-.projects > h1 {
+.title {
   justify-self: baseline;
   grid-area: title;
   font-size: 48px;
