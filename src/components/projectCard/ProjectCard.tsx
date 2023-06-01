@@ -1,26 +1,22 @@
+import React from 'react';
 import Image from '../Image/Image';
 import LoadingContainer from '../LoadingContainer/LoadingContainer';
 import Tool from '../tool/Tool';
 import styles from './ProjectCard.module.scss';
-import { useEffect, useState } from 'react';
+import { Repository } from '../../models/Repository';
 
-export default function ProjectCard() {
-  // [projects, setProjects] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-  }, []);
-
-  if (isLoading) {
-    return <LoadingContainer width={100} height={150} borderRadius={16} />;
+export default function ProjectCard(props: {
+  item: Repository;
+  isLoading: any;
+  className: any;
+}) {
+  if (props.isLoading) {
+    return <LoadingContainer key={props.item.id} width={400} height={550} borderRadius={16} />;
   }
 
   return (
     <div className={styles.card}>
-      <span className={styles.card__title}>Título do Projeto</span>
+      <span className={styles.card__title}>{props.item.name}</span>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
